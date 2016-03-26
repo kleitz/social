@@ -1,0 +1,13 @@
+{
+	"name": "social",
+	"description": "social",
+	"version": "0.0.1",
+	"author": "Vitaly Anagorsky <vitaly@anagorsky.com>",
+	"dependencies": {
+		"async": "latest",
+		"lodash": "latest",
+		"moment": "latest",
+		"express": "latest",
+		"flysocial": "git+https://github.com/flysocial/flysocial.git"
+	}
+}
