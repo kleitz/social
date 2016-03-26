@@ -2,7 +2,7 @@
 var express = require('express'),
 	router = express.Router();
 
-var ctrls = require('../../ctrls/10');
+var ctrls = require('../ctrls/10');
 
 router
 	.route('/join/init')
