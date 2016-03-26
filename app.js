@@ -37,7 +37,7 @@ function main() {
 
 	function start() {
 
-		var port = CONFIG.user.options.port;
+		var port = CONFIG.social.options.port;
 
 		app
 			.use(MIDDLEWARE.cors('*', ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'], ['Content-Type', 'Content-Length', 'session']))
