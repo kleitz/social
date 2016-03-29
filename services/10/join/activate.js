@@ -46,13 +46,7 @@ function getSecret (query, callback) {
 
 function getUser (query, callback) {
 
-	MONGO.user.getByPhone(query.phone, callback);
-
-}
-
-function deleteSecret (query) {
-
-	REDIS.secret.del(query.phone);
+	MONGO.social.user.getByPhone(query.phone, callback);
 
 }
 
@@ -65,6 +59,12 @@ function setSession (query, user, callback) {
 		callback(error, user);
 
 	});
+
+}
+
+function deleteSecret (query) {
+
+	REDIS.secret.del(query.phone);
 
 }
 

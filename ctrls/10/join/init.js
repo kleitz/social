@@ -7,7 +7,7 @@
 	 }
  */
 
-var services = require('../../services/10');
+var services = require('../../../services/10');
 
 module.exports = function (req, res) {
 

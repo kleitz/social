@@ -7,6 +7,6 @@ module.exports = function (query, callback) {
 
 function getUserById (query, callback) {
 
-	MONGO.user.getById(query.id, callback);
+	MONGO.social.user.getById(query.id, callback);
 
 }

@@ -37,7 +37,7 @@ module.exports = function (query, callback) {
 
 function createUser (query, callback) {
 
-	MONGO.user.new(query, function (error, user) {
+	MONGO.social.user.new(query, function (error, user) {
 
 		if (!error && user)
 			callback(null, user);
@@ -52,7 +52,7 @@ function createUser (query, callback) {
 
 function getUser (query, callback) {
 
-	MONGO.user.getByPhone(query.phone, callback);
+	MONGO.social.user.getByPhone(query.phone, callback);
 
 }
 

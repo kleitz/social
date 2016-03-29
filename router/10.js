@@ -6,11 +6,11 @@ var ctrls = require('../ctrls/10');
 
 router
 	.route('/join/init')
-	.post(ctrls.init);
+	.post(ctrls.join.init);
 
 router
 	.route('/join/activate')
-	.post(ctrls.activate);
+	.post(ctrls.join.activate);
 
 router
 	.route('/user/isLoggedIn')
