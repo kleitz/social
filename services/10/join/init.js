@@ -28,8 +28,8 @@ module.exports = function (query, callback) {
 
 			callback(error);
 
-			if (!error && user)
-				notify(query, user);
+			// if (!error && user)
+			// 	notify(query, user);
 
 		});
 
@@ -63,7 +63,7 @@ function createSecret (query, user, callback) {
 	else
 		query.secret = parseInt(Math.random() * 100000);
 
-	REDIS.secret.set(query.phone, query.secret, null, function (error) {
+	REDIS.secret.set(query.phone, CONFIG.social.options.ttl.secret, query.secret, function (error) {
 
 		callback(error, user);
 

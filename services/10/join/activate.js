@@ -52,7 +52,7 @@ function getUser (query, callback) {
 
 function setSession (query, user, callback) {
 
-	REDIS.session.set(user.id, null, function (error, session) {
+	REDIS.session.set(user.id, CONFIG.social.options.ttl.session, function (error, session) {
 
 		user.session = session;
 
